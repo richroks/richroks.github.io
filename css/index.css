@@ -200,6 +200,18 @@ nav ul li a {
   }
 }
 
+@media only screen and (max-width:430px) {
+  .hero {
+      font-size: 1.45em;
+      height: 18em;
+      padding-right: .7em;
+      padding-top: 18.5em;
+  }
+  .hero p {
+    font-size: .9em;
+  }
+}
+
 /* ABOUT ME */
 .about {
   background-color: white;
@@ -356,7 +368,7 @@ nav ul li a {
 }
 
 .skills-center {
-  width: 30em;
+  width: 25em;
   margin: 0 auto;
   color: white;
 }
