@@ -1,0 +1,362 @@
+/* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #222222;
+  height: 8000px;
+}
+
+a, u {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* HEADER NAVIGATION */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5.7em;
+  width: 90%;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  width: 100%;
+  height: 3.6em;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  color: #FFC600;
+  padding: 1em;
+  transition: .5s all;
+}
+
+header.small {
+  height: 1.4em;
+  font-size: .85em;
+  padding: 2.2em;
+  background-color: #FFC600;
+  color: black;
+  -webkit-box-shadow: 0px 1px 30px #222222;
+  -moz-box-shadow: 0px 1px 30px #222222;
+  box-shadow: 0px 1px 30px #222222;
+}
+
+header.small a {
+  color: black;
+}
+
+header.small a:hover {
+  color: white;
+  transition: all .3s;
+}
+
+header.small a.active {
+  color: white;
+}
+
+#logo {
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#logo img {
+  width: 3.5em;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+nav ul li a {
+  margin-right: 3.6em;
+  color: #FFC600;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: white;
+  transition: all .3s;
+}
+
+.mobile-nav {
+  display: none;
+  width: 100%;
+  height: 1em;
+}
+
+@media only screen and (max-width:960px) {
+.main-nav {
+    display: none;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header-container {
+  padding-left: 0em;
+  padding-right: 2em;
+  width: 100%;
+}
+
+header {
+  height: 1.3em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+#logo {
+  font-size: .8em;
+}
+
+header.small {
+  height: .9em;
+  font-size: 1.4em;
+  padding: 1.3em;
+}
+
+nav ul li a {
+  margin-right: 3em;
+}
+
+}
+
+@media only screen and (max-width:700px) {
+#logo h1 {
+  display: none;
+}
+
+#logo img {
+  width: 2.3em;
+}
+}
+
+/* JUMBOTRON */
+.hero {
+  padding-top: 8em;
+  padding-right: 2em;
+  font-size: 3.1em;
+  line-height: .3em;
+  text-align: right;
+  color: #FFC600;
+  height: 11em;
+  background: url('../assets/images/hero.jpeg') no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero p {
+  font-size: .5em;
+  color: white;
+}
+
+@media only screen and (max-width:830px) {
+
+.hero {
+  padding-top: 13em;
+  padding-right: 2em;
+  font-size: 2em;
+  height: 16em;
+  text-align: right;
+}
+
+.hero p {
+  font-size: .7em;
+}
+
+}
+
+@media only screen and (max-width:530px) {
+  .hero {
+      font-size: 1.7em;
+      height: 18em;
+  }
+  .hero p {
+    font-size: .9em;
+  }
+}
+
+/* ABOUT ME */
+.about {
+  background-color: white;
+  height: 38em;
+  width: 100%;
+  padding-top: 7em;
+  display: flex;
+}
+
+.about-title h1 {
+  padding: 6em 3em 0 2.2em;
+  line-height: 1em;
+  font-size: 3em;
+}
+
+.about-title h1 span {
+  color: #FFC600;
+}
+
+.about-title .fa-mouse-pointer {
+  color: #FFC600;
+  position: relative;
+  left: 1.7em;
+  bottom: .9em;
+}
+
+.about-title {
+  float: left;
+}
+
+.about-center {
+  width: 40em;
+  float: left;
+  margin-right: 3em;
+}
+
+.name {
+  font-size: 3em;
+  font-family: 'Nothing You Could Do', cursive;
+  margin-top: 2.5em;
+}
+
+.about img {
+  height: 100%;
+}
+
+.fa-layers {
+  margin: 1em 4em 0 0;
+}
+
+.fa-circle {
+  color: #FFC600;
+}
+
+.fa-layers:hover .fa-circle {
+  color: black;
+  transition: all .5s;
+}
+
+.fa-layers:hover .fa-facebook-f, .fa-layers:hover .fa-twitter, .fa-layers:hover .fa-instagram, .fa-layers:hover .fa-linkedin, .fa-layers:hover .fa-github {
+  color: #FFC600;
+  transition: all .3s;
+}
+
+@media only screen and (max-width:1168px) {
+  .about {
+    height: 35em;
+  }
+
+  .about-title {
+    width: 35%;
+    padding-top: 7em;
+    font-size: 80%;
+  }
+
+  .about-center {
+    width: 40em;
+    float: left;
+    margin-right: 1.75em;
+  }
+
+  .sig-social {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (max-width:975px) {
+  .about {
+    height: auto;
+    padding-top: 0em;
+    flex-wrap: wrap;
+}
+
+  .about-title h1 {
+    padding: 0em 0em 0 2.2em;
+    line-height: 1em;
+    font-size: 3em;
+  }
+
+  .about-center {
+    width: 0 auto;
+    float: none;
+    margin: 0 auto;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .about-title {
+    padding-top: 3em;
+    width: 100%;
+  }
+
+  .about-pic {
+    margin: 0 auto;
+    padding-top: 3em;
+    height: auto;
+    width: 300px;
+  }
+
+}
+
+/* My SKILLS */
+.skills {
+  background: url('../assets/images/laptop1.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 38em;
+  width: 100%;
+  padding-top: 7em;
+}
+
+.skills h1 {
+  line-height: 1em;
+  font-size: 3em;
+  text-align: right;
+  color: #FFC600;
+  position: relative;
+  top: 2em;
+  right: 3em;
+}
+
+.skills h1 span {
+  color: white;
+}
+
+.skills .fa-mouse-pointer {
+  color: black;
+  position: relative;
+  z-index: 2;
+  left: 11.22em;
+  top: 1.72em;
+}
+
+.skills-center {
+  width: 30em;
+  margin: 0 auto;
+  color: white;
+}
