@@ -23,6 +23,16 @@ $(function(){
     });
 });
 
+var isTouch =  !!("ontouchstart" in window) || window.navigator.msMaxTouchPoints > 0;
+
+if( !isTouch ){
+    // add class which defines hover behavior
+		.fa-layers:hover .fa-facebook-f, .fa-layers:hover .fa-twitter, .fa-layers:hover .fa-instagram, .fa-layers:hover .fa-linkedin, .fa-layers:hover .fa-github {
+		  color: #FFC600;
+		  transition: all .3s;
+		}
+}
+
 //HEADER ACTIVE COLOR CHANGE
 	var sections = $('section')
   , nav = $('nav')
