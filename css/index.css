@@ -215,14 +215,14 @@ nav ul li a {
 /* ABOUT ME */
 .about {
   background-color: white;
-  height: 38em;
   width: 100%;
-  padding-top: 7em;
+  padding-top: 5em;
   display: flex;
+  height: auto;
 }
 
 .about-title h1 {
-  padding: 6em 3em 0 2.2em;
+  padding: 9em 3em 0 2.2em;
   line-height: 1em;
   font-size: 3em;
 }
@@ -245,13 +245,21 @@ nav ul li a {
 .about-center {
   width: 40em;
   float: left;
-  margin-right: 3em;
+  margin-right: 1em;
+  color: #808689;
+  line-height: 1.5em;
+}
+
+.about-center span {
+  font-weight: bold;
+  color: black;
 }
 
 .name {
   font-size: 3em;
   font-family: 'Nothing You Could Do', cursive;
   margin-top: 2.5em;
+  color: black;
 }
 
 .about img {
@@ -276,22 +284,18 @@ nav ul li a {
   transition: all .3s;
 }
 
-@media only screen and (max-width:1168px) {
-  .about {
-    height: 35em;
-  }
-
+@media only screen and (max-width:1218px) {
   .about-title {
     width: 35%;
-    padding-top: 7em;
+    padding-top: 11em;
     font-size: 80%;
     margin-bottom: -4em;
   }
 
-  .about-center {
-    width: 40em;
-    float: left;
-    margin-right: 1.75em;
+  .about-title h1 {
+    padding: 9em 2em 0 2.2em;
+    line-height: 1em;
+    font-size: 3em;
   }
 
   .sig-social {
@@ -299,7 +303,7 @@ nav ul li a {
   }
 }
 
-@media only screen and (max-width:975px) {
+@media only screen and (max-width:1068px) {
   .about {
     height: auto;
     padding-top: 0em;
@@ -331,7 +335,18 @@ nav ul li a {
     height: auto;
     width: 300px;
   }
+}
 
+@media only screen and (max-width:600px) {
+  .fa-layers:hover .fa-circle {
+    color: #FFC600;
+    transition: all 0;
+  }
+
+  .fa-layers:hover .fa-facebook-f, .fa-layers:hover .fa-twitter, .fa-layers:hover .fa-instagram, .fa-layers:hover .fa-linkedin, .fa-layers:hover .fa-github {
+    color: black;
+    transition: all 0;
+  }
 }
 
 /* My SKILLS */
@@ -344,32 +359,82 @@ nav ul li a {
   height: 38em;
   width: 100%;
   padding-top: 7em;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.skills h1 {
+.skills-title h1 {
+  padding: 6em 3em 0 2.2em;
   line-height: 1em;
   font-size: 3em;
-  text-align: right;
   color: #FFC600;
-  position: relative;
-  top: 2em;
-  right: 3em;
+  text-align: right;
 }
 
-.skills h1 span {
+.skills-title h1 span {
   color: white;
 }
 
-.skills .fa-mouse-pointer {
+.skills-title .fa-mouse-pointer {
   color: black;
   position: relative;
-  z-index: 2;
-  left: 11.22em;
-  top: 1.72em;
+  top: 3.43em;
+  left: .85em;
+}
+
+.skills-title {
+  float: left;
 }
 
 .skills-center {
-  width: 25em;
-  margin: 0 auto;
+  width: 40em;
   color: white;
+  float: left;
+  margin-right: 3em;
+}
+}
+
+@media only screen and (max-width:1168px) {
+  .skills {
+    height: 35em;
+  }
+
+  .skills-title {
+    width: 35%;
+    padding-top: 7em;
+    font-size: 80%;
+  }
+
+  .skills-center {
+    width: 40em;
+    float: left;
+    margin-right: 1.75em;
+  }
+}
+
+@media only screen and (max-width:975px) {
+  .skills {
+    height: auto;
+    padding-top: 0em;
+    flex-wrap: wrap;
+}
+
+  .skills-title h1 {
+    padding: 0em 0em 0 2.2em;
+    line-height: 1em;
+    font-size: 3em;
+  }
+
+  .skills-center {
+    width: 0 auto;
+    float: none;
+    margin: 0 auto;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .skills-title {
+    padding-top: 3em;
+    width: 100%;
+  }
 }
