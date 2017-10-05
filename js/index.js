@@ -12,20 +12,16 @@ $(document).on("scroll", function() {
 //LOGO CHANGE ON HOVER
 $(function(){
     $(window).scroll(function(){
-        if($(this).scrollTop() >= 50) {
+        if($(this).scrollTop() > 50) {
             $('#logo img')
                 .attr('src','./assets/images/RichroksLogo-black.png');
         }
-        if($(this).scrollTop() <= 50) {
+        if($(this).scrollTop() < 50) {
             $('#logo img')
                 .attr('src','./assets/images/RichroksLogo-gold.png');
         }
     });
 });
-
-var isTouch =  !!("ontouchstart" in window) || window.navigator.msMaxTouchPoints > 0;
-
-
 
 //HEADER ACTIVE COLOR CHANGE
 	var sections = $('section')

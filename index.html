@@ -4,20 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <meta name="theme-color" content="#ffc600">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
   <link rel="manifest" href="./assets/favicons/manifest.json">
   <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#ffc600">
-  <meta name="theme-color" content="#ffc600">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <script defer src="./assets/fonts/brands.min.js"></script>
   <script defer src="./assets/fonts/solid.min.js"></script>
   <script defer src="./assets/fonts/fontawesome.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/index.css">
-  <link rel="stylesheet" href="./js/jquery3.2.1.min.js">
   <title>rickroks.com | Portfolio</title>
 </head>
 
@@ -33,19 +33,18 @@
         <ul class="main-nav">
           <li><a href="#1" title="Welcome">WELCOME</a></li>
           <li><a href="#2" title="About Me">ABOUT ME</a></li>
-          <li><a href="#" title="Story">STORY</a></li>
+          <li><a href="#3" title="Story">STORY</a></li>
           <li><a href="#" title="Contact">CONTACT</a></li>
         </ul>
         <ul class="mobile-nav">
           <li><a href="#1"><i class="fa fa-home"></i></a></li>
           <li><a href="#2"><i class="fa fa-id-card"></i></a></li>
-          <li><a href="#"><i class="fa fa-film-alt"></i></a></li>
+          <li><a href="#3"><i class="fa fa-film-alt"></i></a></li>
           <li><a href="#"><i class="fa fa-at"></i></a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <div class="sections">
     <!-- JUMBOTRON -->
     <section id="1">
       <div class="hero">
@@ -62,7 +61,7 @@
         </div>
         <div class="about-center">
           <p>
-            <span>Hello! I'm Rich Roksiewicz, Junior Web Developer based in Baltimore, Maryland.</span><br><br>I’ve been building websites since fall of 2014. I started off using WYSIWYG builders such as Wordpress and WiX and began desiring to learn more. I worked as an E-Commerce Administrator by day and a student by night addicted to soaking in as much as I could from both free and paid resources. Fast forward to today, I am now a freelance web developer who loves to write code and continue his learning!<br><br><span>I am also a movie junkie, a comic book collector, and a happy single father who is self motivated to be the best father and developer I can be.</span>
+            <span>Hello! I'm Rich Roksiewicz, Junior Web Developer based in Baltimore, Maryland.</span><br><br>I’ve been building websites since fall of 2014. I started off using WYSIWYG builders such as Wordpress and WiX and began desiring to learn more. I worked as an E-Commerce Administrator by day and a student by night addicted to soaking in as much as I could from both free and paid resources. Fast forward to today, I am now a freelance web developer who loves to write code and continue his learning!<br><br><span>I am also a movie junkie, a comic book collector, and a happy single father who is self motivated to be the best dad and developer I can be.</span>
           </p>
           <div class="sig-social">
             <p class="name">Rich Roksiewicz</p>
@@ -90,19 +89,54 @@
         </div>
         <img class="about-pic" src="./assets/images/scottsnyder.jpeg" alt="scottSnyder">
       </div>
-      <div class="skills">
-        <div class="skills-title">
-          <i class="fa fa-mouse-pointer fa-7x" data-fa-transform="rotate-180" aria-hidden="true"></i>
-          <h1>MY<br><span>SKILLS</span></h1>
+      <section id="3">
+        <div class="skills">
+          <div class="skills-title">
+            <i class="fa fa-mouse-pointer fa-7x" data-fa-transform="rotate-180" aria-hidden="true"></i>
+            <h1>MY<br><span>SKILLS</span></h1>
+          </div>
+          <div class="skills-center">
+            <h1>WHAT YOU NEED TO KNOW</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <div class="skills-bars">
+              <div class="html-css">
+                <h3>
+                  <span>HTML <i class="fab fa-html5" aria-hidden="true"></i> </span> •
+                 <span>CSS <i class="fab fa-css3-alt" aria-hidden="true"></i></span>
+                </h3>
+                <div class="progress one">80%</div>
+              </div>
+              <div class="html-css">
+                <h3>PHOTOSHOP • ILLUSTRATOR</h3>
+                <div class="progress two">70%</div>
+              </div>
+              <div class="html-css">
+                <h3>
+                  <span>JAVASCRIPT <i class="fab fa-js-square" aria-hidden="true"></i></span>
+                </h3>
+                <div class="progress three">60%</div>
+              </div>
+              <div class="html-css">
+                <h3>JQUERY</h3>
+                <div class="progress four">40%</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="skills-center">
-          <h2>WHAT YOU NEED TO KNOW</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        <div class="certifications">
+          <h1>Certifications</h1>
+            <div class="certs">
+            <a href="./assets/certifications/freelancewebdev.pdf"><img src="./assets/images/codecademy.png" alt=""></a>
+            <a href="./assets/certifications/inbound.pdf"><img src="./assets/images/inbound.png" alt=""></a>
+            <a href="./assets/certifications/marketingsoftware.pdf"><img src="./assets/images/marketingsoftware.png" alt=""></a>
+            <a href="./assets/certifications/hubdesign.pdf"><img src="./assets/images/hubdesign.png" alt=""></a>
+            <a href="./assets/certifications/growthdesign.pdf"><img src="./assets/images/growthdesign.png" alt=""></a>
+            <a href="./assets/certifications/CCA-Certificate-HTMLLevel1.pdf"><img src="./assets/images/HTMLLevel1.png" alt=""></a>
+            <a href="./assets/certifications/CCA-Certificate-CSSLevel1.pdf"><img src="./assets/images/CSSLevel1.png" alt=""></a>
+            </div>
         </div>
-      </div>
-  </div>
+    </section>
   </section>
-  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./js/index.js"></script>
 </body>

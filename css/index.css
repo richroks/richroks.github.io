@@ -6,7 +6,6 @@ body {
   line-height: 14px;
   font-family: 'Raleway', sans-serif;
   background-color: #222222;
-  height: 8000px;
 }
 
 a, u {
@@ -20,6 +19,14 @@ ul {
 
 *:focus {
   outline: none;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h3 {
+  font: 1.2em;
 }
 
 /* HEADER NAVIGATION */
@@ -48,7 +55,7 @@ header {
 
 header.small {
   height: 1.4em;
-  font-size: .85em;
+  font-size: 1em;
   padding: 2.2em;
   background-color: #FFC600;
   color: black;
@@ -63,7 +70,6 @@ header.small a {
 
 header.small a:hover {
   color: white;
-  transition: all .3s;
 }
 
 header.small a.active {
@@ -75,6 +81,9 @@ header.small a.active {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-right: 1.7em;
 }
 
 #logo img {
@@ -105,63 +114,71 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width:960px) {
-.main-nav {
-    display: none;
-}
+  .main-nav {
+      display: none;
+  }
 
-.mobile-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-}
+  .mobile-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.5em;
+      line-height: 1.5em;
+  }
 
-.header-container {
-  padding-left: 0em;
-  padding-right: 2em;
-  width: 100%;
-}
+  .header-container {
+    padding-left: 0em;
+    width: 100%;
+  }
 
-header {
-  height: 1.3em;
-  font-size: 1.5em;
-  line-height: 1.5em;
-}
-
-#logo {
-  font-size: .8em;
-}
-
-header.small {
-  height: .9em;
-  font-size: 1.4em;
-  padding: 1.3em;
-}
-
-nav ul li a {
-  margin-right: 3em;
-}
-
+  nav ul li a {
+    margin-right: 3em;
+  }
 }
 
 @media only screen and (max-width:700px) {
-#logo h1 {
-  display: none;
+  #logo h1 {
+    display: none;
+  }
+
+  #logo img {
+    width: 2.3em;
+  }
+
+  #logo {
+    margin-right: 2.9em;
+  }
 }
 
-#logo img {
-  width: 2.3em;
+@media only screen and (max-width:380px) {
+  #logo {
+    margin-right: 2em;
+  }
 }
+
+@media only screen and (max-width:330px) {
+  .mobile-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.2em;
+      line-height: 1em;
+  }
+
+  #logo {
+    margin-right: 1.5em;
+  }
 }
 
 /* JUMBOTRON */
 .hero {
-  padding-top: 8em;
+  padding-top: 11em;
   padding-right: 2em;
   font-size: 3.1em;
-  line-height: .3em;
+  line-height: 1.6em;
   text-align: right;
   color: #FFC600;
-  height: 11em;
+  height: 9.5em;
   background: url('../assets/images/hero.jpeg') no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -170,45 +187,55 @@ nav ul li a {
 }
 
 .hero p {
-  font-size: .5em;
+  font-size: .6em;
   color: white;
 }
 
-@media only screen and (max-width:830px) {
-
-.hero {
-  padding-top: 13em;
-  padding-right: 2em;
-  font-size: 2em;
-  height: 16em;
-  text-align: right;
-}
-
-.hero p {
-  font-size: .7em;
-}
-
-}
-
-@media only screen and (max-width:530px) {
+@media only screen and (max-width:865px) {
   .hero {
-      font-size: 1.7em;
-      height: 18em;
+    padding-top: 17em;
+    padding-right: 2em;
+    font-size: 2em;
+    height: 15em;
+    text-align: right;
+  }
+
+  .hero p {
+    font-size: .7em;
+  }
+}
+
+@media only screen and (max-width:560px) {
+  .hero {
+      padding-top: 20em;
+      font-size: 1.5em;
+      height: 21em;
   }
   .hero p {
     font-size: .9em;
   }
 }
 
-@media only screen and (max-width:430px) {
+@media only screen and (max-width:420px) {
   .hero {
-      font-size: 1.45em;
-      height: 18em;
+      font-size: 1.3em;
+      height: 22em;
       padding-right: .7em;
-      padding-top: 18.5em;
+      padding-top: 21em;
   }
+
   .hero p {
-    font-size: .9em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width:373px) {
+  .hero {
+      font-size: 1.1em;
+  }
+
+  .hero p {
+    font-size: 1em;
   }
 }
 
@@ -216,9 +243,8 @@ nav ul li a {
 .about {
   background-color: white;
   width: 100%;
-  padding-top: 5em;
+  padding-top: 7em;
   display: flex;
-  height: auto;
 }
 
 .about-title h1 {
@@ -235,7 +261,7 @@ nav ul li a {
   color: #FFC600;
   position: relative;
   left: 1.7em;
-  bottom: .9em;
+  bottom: .55em;
 }
 
 .about-title {
@@ -258,7 +284,7 @@ nav ul li a {
 .name {
   font-size: 3em;
   font-family: 'Nothing You Could Do', cursive;
-  margin-top: 2.5em;
+  margin-top: 2em;
   color: black;
 }
 
@@ -267,7 +293,7 @@ nav ul li a {
 }
 
 .fa-layers {
-  margin: 1em 4em 0 0;
+  margin: 4em 4em 0 0;
 }
 
 .fa-circle {
@@ -293,7 +319,7 @@ nav ul li a {
   }
 
   .about-title h1 {
-    padding: 9em 2em 0 2.2em;
+    padding: 9em 1em 0 2.2em;
     line-height: 1em;
     font-size: 3em;
   }
@@ -325,7 +351,7 @@ nav ul li a {
   }
 
   .about-title {
-    padding-top: 3em;
+    padding-bottom: 6em;
     width: 100%;
   }
 
@@ -356,15 +382,13 @@ nav ul li a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 38em;
-  width: 100%;
-  padding-top: 7em;
+  padding: 8em 4em;
   display: flex;
   flex-direction: row-reverse;
 }
 
 .skills-title h1 {
-  padding: 6em 3em 0 2.2em;
+  padding: 11em 3em 0 2.2em;
   line-height: 1em;
   font-size: 3em;
   color: #FFC600;
@@ -378,8 +402,8 @@ nav ul li a {
 .skills-title .fa-mouse-pointer {
   color: black;
   position: relative;
-  top: 3.43em;
-  left: .85em;
+  top: 5.25em;
+  left: .94em;
 }
 
 .skills-title {
@@ -388,10 +412,76 @@ nav ul li a {
 
 .skills-center {
   width: 40em;
+  line-height: 1.5em;
   color: white;
   float: left;
   margin-right: 3em;
 }
+
+.skills-center h1 {
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.skills-bars {
+  padding-top: 3em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.progress {
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    width:400px;
+    height:50px;
+    line-height: 50px;
+    padding-right: .8em;
+    background: rgba(34, 34, 34, 0.8);
+    position:relative;
+    text-align: right;
+}
+
+.progress:after {
+    content:'\A';
+    position:absolute;
+    background:#FFC600;
+    top:0; bottom:0;
+    left:0;
+    -webkit-animation: filler 2s ease-in-out;
+    -moz-animation: filler 2s ease-in-out;
+    animation: filler 2s ease-in-out;
+}
+
+.one:after {
+  width: 80%;
+}
+
+.two:after {
+  width: 70%;
+}
+
+.three:after {
+  width: 60%;
+}
+
+.four:after {
+  width: 40%;
+}
+
+@-webkit-keyframes filler {
+    0% {
+        width:0;
+    }
+}
+@-moz-keyframes filler {
+    0% {
+        width:0;
+    }
+}
+@keyframes filler {
+    0% {
+        width:0;
+    }
 }
 
 @media only screen and (max-width:1168px) {
@@ -437,4 +527,23 @@ nav ul li a {
     padding-top: 3em;
     width: 100%;
   }
+}
+
+.certifications {
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: 14em;
+  line-height: 7em;
+  align-items: center;
+  padding: 2em 3em;
+}
+
+.certs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.certs img {
+  width: 12em;
 }
